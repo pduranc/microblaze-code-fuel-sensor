@@ -40,9 +40,9 @@
 #define ADDRESS_CTRL_REG6_XM     0x25 //Direccion de registro CTRL_REG6_XM del Magnetometro. Se utiliza para seteo inicial.
 #define ADDRESS_CTRL_REG7_XM     0x26 //Direccion de registro CTRL_REG7_XM del Magnetometro. Se utiliza para seteo inicial.
 
-#define ADDRESS_ACC	0x28
-#define ADDRESS_GYR	0x28
-#define ADDRESS_MAG	0x08
+#define ADDRESS_ACC	0x28 // Direccion del registro para obtener las 3 componentes de aceleracion. Se diferencia de ADDRESS_GYR por ADDRESS_ACC_MAG
+#define ADDRESS_GYR	0x28 // Direccion del registro para obtener las 3 componentes de gyroscopio.  Se diferencia de ADDRESS_ACC por ADDRESS_GYRO
+#define ADDRESS_MAG	0x08 // Direccion del registro para obtener las 3 componentes de magnetometro
 
 
 /************************** Function Prototypes ******************************/
